@@ -1,9 +1,14 @@
-﻿CREATE PROCEDURE [dbo].[Autentificare] @numeUtilizator NVARCHAR(50) = 0
+﻿CREATE PROCEDURE [dbo].[Autentificare] @numeUtilizator NVARCHAR(50)
 	,@parolaUtilizator NVARCHAR(50)
+	,@IDUtilizator INT OUTPUT
 AS
-RETURN
+BEGIN
+	SET @IDUtilizator = (
+			SELECT [PersonID]
+			FROM [dbo].[Login]
+			WHERE [username] = @numeUtilizator
+				AND [password] = @parolaUtilizator
+			)
 
-SELECT [PersonID]
-FROM [dbo].[Login]
-WHERE [username] = @numeUtilizator
-	AND [password] = @parolaUtilizator
+	RETURN @IDUtilizator
+END

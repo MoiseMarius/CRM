@@ -5,5 +5,5 @@
 	,[Prenume] NCHAR(25) NULL
 	,[DataNasterii] DATETIME NULL
 	,[Ocupatie] NCHAR(25) NULL
-	,[Sex] NCHAR(1) NULL
+	,[Sex] NCHAR(1) NULL 
 	)

@@ -72,5 +72,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="IntroduActivitate.sql" />
+    <None Include="IncarcaTabelaPerson.sql" />
+    <None Include="IncarcaTabelaLogin.sql" />
+    <None Include="IncarcaTabelaActivitati.sql" />
   </ItemGroup>
 </Project>
