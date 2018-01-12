@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27130.2020
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRM", "CRM\CRM.csproj", "{098C1047-E79A-41A1-83BA-78C75B5AB94A}"
 EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "DataBase", "DataBase\DataBase.sqlproj", "{48E7EEB9-109E-46FC-8934-C95CC0F04EEC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,12 @@ Global
 		{098C1047-E79A-41A1-83BA-78C75B5AB94A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{098C1047-E79A-41A1-83BA-78C75B5AB94A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{098C1047-E79A-41A1-83BA-78C75B5AB94A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48E7EEB9-109E-46FC-8934-C95CC0F04EEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48E7EEB9-109E-46FC-8934-C95CC0F04EEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48E7EEB9-109E-46FC-8934-C95CC0F04EEC}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{48E7EEB9-109E-46FC-8934-C95CC0F04EEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48E7EEB9-109E-46FC-8934-C95CC0F04EEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48E7EEB9-109E-46FC-8934-C95CC0F04EEC}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
