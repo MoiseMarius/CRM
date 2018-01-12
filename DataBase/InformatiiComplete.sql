@@ -12,4 +12,4 @@ SELECT p.ID
 	,c.TelefonMobil
 	,c.TelefonAcasa
 FROM [Person] p
-INNER JOIN [Contact] c ON p.ID = c.ID
+INNER JOIN [Contact] c ON p.ID = c.PersonID

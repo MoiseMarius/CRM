@@ -42,4 +42,18 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="Emailuri" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="286ce8ab-99a5-4f80-b552-7780773c3af0" ChangeDateTime="01/12/2018 18:05:20">
+    <Property Name="ElementName" Value="[dbo].[Activitati].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Activitati]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="80476fa0-8779-4052-9d5f-d961df2a3699" ChangeDateTime="01/12/2018 18:26:18">
+    <Property Name="ElementName" Value="[dbo].[TipuriDeActivitati].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[TipuriDeActivitati]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ID" />
+  </Operation>
 </Operations>
