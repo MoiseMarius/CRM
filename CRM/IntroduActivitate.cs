@@ -7,18 +7,10 @@ namespace CRM
     {
         PaginaPrincipala linkInapoi;
 
-        public IntroduActivitate()
-        {
-            InitializeComponent();
-        }
-
         public IntroduActivitate(PaginaPrincipala parinte)
         {
+            InitializeComponent();
             linkInapoi = parinte;
-        }
-
-        private void IntroduActivitate_Load(object sender, EventArgs e)
-        {
         }
 
         private void Salveaza_Click(object sender, EventArgs e)

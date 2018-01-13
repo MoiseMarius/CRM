@@ -4,6 +4,6 @@
 	,FOREIGN KEY ([PersonID]) REFERENCES [Person]([ID])
 	,[Adresa] NVARCHAR(MAX) NULL
 	,[Emailuri] NVARCHAR(MAX) NULL
-	,[TelefonAcasa] NCHAR(10) NULL
-	,[TelefonMobil] NCHAR(10) NULL
+	,[TelefonAcasa] NVARCHAR(MAX) NULL
+	,[TelefonMobil] NVARCHAR(MAX) NULL
 	)

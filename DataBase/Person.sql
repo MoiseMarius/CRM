@@ -1,9 +1,9 @@
 ﻿CREATE TABLE [dbo].[Person] (
 	[ID] INT IDENTITY(1, 1) PRIMARY KEY
-	,[Titlu] NCHAR(10) NULL
-	,[Nume] NCHAR(25) NULL
-	,[Prenume] NCHAR(25) NULL
+	,[Titlu] NVARCHAR(MAX) NULL
+	,[Nume] NVARCHAR(MAX) NULL
+	,[Prenume] NVARCHAR(MAX) NULL
 	,[DataNasterii] DATETIME NULL
-	,[Ocupatie] NCHAR(25) NULL
-	,[Sex] NCHAR(1) NULL 
+	,[Ocupatie] NVARCHAR(MAX) NULL
+	,[Sex] NVARCHAR(1) NULL 
 	)

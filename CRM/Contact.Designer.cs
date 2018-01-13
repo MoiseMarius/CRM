@@ -31,9 +31,6 @@
             this.components = new System.ComponentModel.Container();
             this.Back = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.structuriDeDate = new CRM.StructuriDeDate();
-            this.informatiiCompleteBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.informatiiCompleteTableAdapter = new CRM.StructuriDeDateTableAdapters.InformatiiCompleteTableAdapter();
             this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.titluDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.numeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -45,9 +42,12 @@
             this.emailuriDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.telefonMobilDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.telefonAcasaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.informatiiCompleteBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.structuriDeDate = new CRM.StructuriDeDate();
+            this.informatiiCompleteTableAdapter = new CRM.StructuriDeDateTableAdapters.InformatiiCompleteTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.structuriDeDate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.informatiiCompleteBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.structuriDeDate)).BeginInit();
             this.SuspendLayout();
             // 
             // Back
@@ -87,20 +87,6 @@
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(875, 150);
             this.dataGridView1.TabIndex = 14;
-            // 
-            // structuriDeDate
-            // 
-            this.structuriDeDate.DataSetName = "StructuriDeDate";
-            this.structuriDeDate.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // informatiiCompleteBindingSource
-            // 
-            this.informatiiCompleteBindingSource.DataMember = "InformatiiComplete";
-            this.informatiiCompleteBindingSource.DataSource = this.structuriDeDate;
-            // 
-            // informatiiCompleteTableAdapter
-            // 
-            this.informatiiCompleteTableAdapter.ClearBeforeFill = true;
             // 
             // iDDataGridViewTextBoxColumn
             // 
@@ -179,6 +165,20 @@
             this.telefonAcasaDataGridViewTextBoxColumn.Name = "telefonAcasaDataGridViewTextBoxColumn";
             this.telefonAcasaDataGridViewTextBoxColumn.ReadOnly = true;
             // 
+            // informatiiCompleteBindingSource
+            // 
+            this.informatiiCompleteBindingSource.DataMember = "InformatiiComplete";
+            this.informatiiCompleteBindingSource.DataSource = this.structuriDeDate;
+            // 
+            // structuriDeDate
+            // 
+            this.structuriDeDate.DataSetName = "StructuriDeDate";
+            this.structuriDeDate.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // informatiiCompleteTableAdapter
+            // 
+            this.informatiiCompleteTableAdapter.ClearBeforeFill = true;
+            // 
             // Contact
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -190,8 +190,8 @@
             this.Text = "Contact";
             this.Load += new System.EventHandler(this.Contact_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.structuriDeDate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.informatiiCompleteBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.structuriDeDate)).EndInit();
             this.ResumeLayout(false);
 
         }

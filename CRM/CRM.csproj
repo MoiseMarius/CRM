@@ -63,6 +63,12 @@
     <Compile Include="Contact.Designer.cs">
       <DependentUpon>Contact.cs</DependentUpon>
     </Compile>
+    <Compile Include="ContactRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContactRegister.Designer.cs">
+      <DependentUpon>ContactRegister.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormularContact.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,6 +81,12 @@
     <Compile Include="IntroduActivitate.Designer.cs">
       <DependentUpon>IntroduActivitate.cs</DependentUpon>
     </Compile>
+    <Compile Include="LoginRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginRegister.Designer.cs">
+      <DependentUpon>LoginRegister.cs</DependentUpon>
+    </Compile>
     <Compile Include="PaginaPrincipala.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +95,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
     <Compile Include="StructuriDeDate.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -97,8 +115,14 @@
     <EmbeddedResource Include="Contact.resx">
       <DependentUpon>Contact.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ContactRegister.resx">
+      <DependentUpon>ContactRegister.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="IntroduActivitate.resx">
       <DependentUpon>IntroduActivitate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginRegister.resx">
+      <DependentUpon>LoginRegister.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PaginaPrincipala.resx">
       <DependentUpon>PaginaPrincipala.cs</DependentUpon>
@@ -112,6 +136,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

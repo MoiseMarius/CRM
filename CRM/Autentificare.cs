@@ -16,11 +16,6 @@ namespace CRM
             InitializeComponent();
         }
 
-        private void Autentificare_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void LoginButton_Click(object sender, EventArgs e)
         {
             using (SqlConnection bazaLocala = new SqlConnection(Properties.Settings.Default.DataBaseConnectionString))
@@ -56,6 +51,14 @@ namespace CRM
                 utilizatorAutentificat = new StructuriDeDateTableAdapters.PersonTableAdapter().GetData().Where(x => x.ID == IDUtilizatorAutentificat).First();
                 this.Close();
             }
+        }
+
+        private void Register_Click(object sender, EventArgs e)
+        {
+            Register paginaDeInregistrare = new Register(this);
+
+            paginaDeInregistrare.Show();
+            this.Hide();
         }
     }
 }

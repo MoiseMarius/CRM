@@ -41,9 +41,9 @@
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(47, 375);
+            this.label2.Location = new System.Drawing.Point(12, 347);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(484, 38);
+            this.label2.Size = new System.Drawing.Size(462, 38);
             this.label2.TabIndex = 9;
             this.label2.Text = "Introdu Punctajul";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -51,9 +51,9 @@
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(47, 62);
+            this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(484, 49);
+            this.label1.Size = new System.Drawing.Size(462, 49);
             this.label1.TabIndex = 8;
             this.label1.Text = "Introdu Numele Activitatii";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -61,27 +61,27 @@
             // Punctaj
             // 
             this.Punctaj.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Punctaj.Location = new System.Drawing.Point(94, 418);
+            this.Punctaj.Location = new System.Drawing.Point(19, 390);
             this.Punctaj.Margin = new System.Windows.Forms.Padding(5);
             this.Punctaj.Name = "Punctaj";
-            this.Punctaj.Size = new System.Drawing.Size(400, 38);
+            this.Punctaj.Size = new System.Drawing.Size(453, 38);
             this.Punctaj.TabIndex = 7;
             this.Punctaj.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // NumeActivitate
             // 
             this.NumeActivitate.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NumeActivitate.Location = new System.Drawing.Point(94, 122);
+            this.NumeActivitate.Location = new System.Drawing.Point(19, 63);
             this.NumeActivitate.Margin = new System.Windows.Forms.Padding(5);
             this.NumeActivitate.Name = "NumeActivitate";
-            this.NumeActivitate.Size = new System.Drawing.Size(400, 38);
+            this.NumeActivitate.Size = new System.Drawing.Size(455, 38);
             this.NumeActivitate.TabIndex = 6;
             this.NumeActivitate.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Salveaza
             // 
             this.Salveaza.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Salveaza.Location = new System.Drawing.Point(189, 525);
+            this.Salveaza.Location = new System.Drawing.Point(137, 525);
             this.Salveaza.Margin = new System.Windows.Forms.Padding(5);
             this.Salveaza.Name = "Salveaza";
             this.Salveaza.Size = new System.Drawing.Size(200, 65);
@@ -93,9 +93,9 @@
             // label3
             // 
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(47, 215);
+            this.label3.Location = new System.Drawing.Point(12, 174);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(484, 49);
+            this.label3.Size = new System.Drawing.Size(462, 49);
             this.label3.TabIndex = 10;
             this.label3.Text = "Introdu Categoria Activitatii";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -103,17 +103,17 @@
             // IDCategorie
             // 
             this.IDCategorie.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IDCategorie.Location = new System.Drawing.Point(89, 275);
+            this.IDCategorie.Location = new System.Drawing.Point(19, 228);
             this.IDCategorie.Margin = new System.Windows.Forms.Padding(5);
             this.IDCategorie.Name = "IDCategorie";
-            this.IDCategorie.Size = new System.Drawing.Size(400, 38);
+            this.IDCategorie.Size = new System.Drawing.Size(455, 38);
             this.IDCategorie.TabIndex = 11;
             this.IDCategorie.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Back
             // 
             this.Back.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Back.Location = new System.Drawing.Point(189, 600);
+            this.Back.Location = new System.Drawing.Point(137, 600);
             this.Back.Margin = new System.Windows.Forms.Padding(5);
             this.Back.Name = "Back";
             this.Back.Size = new System.Drawing.Size(200, 65);
@@ -126,7 +126,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(579, 682);
+            this.ClientSize = new System.Drawing.Size(486, 682);
             this.Controls.Add(this.Back);
             this.Controls.Add(this.IDCategorie);
             this.Controls.Add(this.label3);
@@ -137,7 +137,6 @@
             this.Controls.Add(this.Salveaza);
             this.Name = "IntroduActivitate";
             this.Text = "IntroduActivitate";
-            this.Load += new System.EventHandler(this.IntroduActivitate_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
