@@ -57,6 +57,18 @@
     <Compile Include="Clasament.Designer.cs">
       <DependentUpon>Clasament.cs</DependentUpon>
     </Compile>
+    <Compile Include="Contact.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contact.Designer.cs">
+      <DependentUpon>Contact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormularContact.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularContact.Designer.cs">
+      <DependentUpon>FormularContact.cs</DependentUpon>
+    </Compile>
     <Compile Include="IntroduActivitate.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +93,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Clasament.resx">
       <DependentUpon>Clasament.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contact.resx">
+      <DependentUpon>Contact.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="IntroduActivitate.resx">
       <DependentUpon>IntroduActivitate.cs</DependentUpon>

@@ -30,7 +30,7 @@ namespace CRM
         private void Back_Click(object sender, EventArgs e)
         {
             linkInapoi.Show();
-            this.Close();
+            this.Hide();
         }
     }
 }
