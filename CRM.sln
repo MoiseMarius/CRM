@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 15.0.27130.2020
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRM", "CRM\CRM.csproj", "{098C1047-E79A-41A1-83BA-78C75B5AB94A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{48E7EEB9-109E-46FC-8934-C95CC0F04EEC} = {48E7EEB9-109E-46FC-8934-C95CC0F04EEC}
+	EndProjectSection
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "DataBase", "DataBase\DataBase.sqlproj", "{48E7EEB9-109E-46FC-8934-C95CC0F04EEC}"
 EndProject

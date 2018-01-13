@@ -1,14 +1,15 @@
 ﻿using System;
 using System.Data;
 using System.Data.SqlClient;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace CRM
 {
     public partial class Autentificare : Form
     {
-        private const string ConnectionString = @"Data Source=(localdb)\ProjectsV13;Initial Catalog=DataBase;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
-        public static int IDUtilizatorAutentificat;
+        public static int IDUtilizatorAutentificat = -5;
+        public static StructuriDeDate.PersonRow utilizatorAutentificat;
 
         public Autentificare()
         {
@@ -22,7 +23,7 @@ namespace CRM
 
         private void LoginButton_Click(object sender, EventArgs e)
         {
-            using (SqlConnection bazaLocala = new SqlConnection(ConnectionString))
+            using (SqlConnection bazaLocala = new SqlConnection(Properties.Settings.Default.DataBaseConnectionString))
             using (SqlCommand autentifica = new SqlCommand
             {
                 Connection = bazaLocala,
@@ -48,6 +49,14 @@ namespace CRM
                 {
                     IDUtilizatorAutentificat = 0;
                 }
+            }
+
+            if (IDUtilizatorAutentificat > 0)
+            {
+                utilizatorAutentificat = new StructuriDeDateTableAdapters.PersonTableAdapter().GetUser(IDUtilizatorAutentificat).First();
+                PaginaPrincipala main = new PaginaPrincipala();
+                main.Show();
+                this.Close();
             }
         }
     }
