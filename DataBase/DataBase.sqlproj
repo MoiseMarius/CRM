@@ -66,12 +66,13 @@
     <Build Include="Autentificare.sql" />
     <Build Include="Activitati.sql" />
     <Build Include="TipuriDeActivitati.sql" />
+    <Build Include="Clasament.sql" />
+    <Build Include="InsereazaActivitate.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="DataBase.refactorlog" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="IntroduActivitate.sql" />
     <None Include="IncarcaTabelaPerson.sql" />
     <None Include="IncarcaTabelaLogin.sql" />
     <None Include="IncarcaTabelaActivitati.sql" />

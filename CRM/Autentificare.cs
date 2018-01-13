@@ -53,7 +53,7 @@ namespace CRM
 
             if (IDUtilizatorAutentificat > 0)
             {
-                utilizatorAutentificat = new StructuriDeDateTableAdapters.PersonTableAdapter().GetUser(IDUtilizatorAutentificat).First();
+                utilizatorAutentificat = new StructuriDeDateTableAdapters.PersonTableAdapter().GetData().Where(x => x.ID == IDUtilizatorAutentificat).First();
                 PaginaPrincipala main = new PaginaPrincipala();
                 main.Show();
                 this.Close();

@@ -5,11 +5,13 @@ namespace CRM
 {
     public partial class PaginaPrincipala : Form
     {
+        public StructuriDeDateTableAdapters.QueriesTableAdapter adaptorDate;
         IntroduActivitate panouActivitate;
 
         public PaginaPrincipala()
         {
             InitializeComponent();
+            adaptorDate = new StructuriDeDateTableAdapters.QueriesTableAdapter();
             panouActivitate = new IntroduActivitate(this);
         }
         
