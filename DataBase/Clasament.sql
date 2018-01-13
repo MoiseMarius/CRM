@@ -12,11 +12,11 @@ SELECT TOP (3) [Titlu]
 		) AS Punctaj
 FROM [dbo].[Person] p
 INNER JOIN [dbo].[Activitati] a ON p.ID = a.PersonID
-GROUP BY [NumeActivitate]
+GROUP BY [CategorieActivitate]
 	,[Titlu]
 	,[Nume]
 	,[Prenume]
 	,[Ocupatie]
 	,[ScorActivitate]
-	,[CategorieActivitate]
+	,[NumeActivitate]
 ORDER BY Punctaj DESC

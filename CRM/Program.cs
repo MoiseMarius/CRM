@@ -14,7 +14,10 @@ namespace CRM
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Autentificare());
-            Application.Run(new PaginaPrincipala());
+            if (Autentificare.LoggedIn)
+            {
+                Application.Run(new PaginaPrincipala());
+            }
         }
     }
 }

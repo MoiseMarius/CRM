@@ -16,7 +16,15 @@ namespace CRM
 
         private void LoginButton_Click(object sender, EventArgs e)
         {
-            adaptorDeDate.Insert(userID, UserName.Text, Password.Text.GetHashCode().ToString());
+            try
+            {
+                adaptorDeDate.Insert(userID, UserName.Text, Password.Text.GetHashCode().ToString());
+            }
+            catch
+            {
+                MessageBox.Show("Datele pentru logare nu se pot salva!!!");
+                adaptorDeDate.Insert(userID, null, null);
+            }
             this.Close();
         }
     }

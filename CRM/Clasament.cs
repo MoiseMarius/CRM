@@ -23,9 +23,6 @@ namespace CRM
         {
             // TODO: This line of code loads data into the 'structuriDeDate.Clasament' table. You can move, or remove it, as needed.
             this.clasamentTableAdapter.Fill(this.structuriDeDate.Clasament);
-            // TODO: This line of code loads data into the 'structuriDeDate.Clasament' table. You can move, or remove it, as needed.
-            this.clasamentTableAdapter.Fill(this.structuriDeDate.Clasament);
-
         }
     }
 }

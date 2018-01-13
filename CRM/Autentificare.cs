@@ -10,6 +10,7 @@ namespace CRM
     {
         public static int IDUtilizatorAutentificat = -5;
         public static StructuriDeDate.PersonRow utilizatorAutentificat;
+        public static bool LoggedIn = false;
 
         public Autentificare()
         {
@@ -31,7 +32,15 @@ namespace CRM
                 autentifica.Parameters.AddWithValue("@parolaUtilizator", Password.Text.GetHashCode());
                 autentifica.Parameters.Add("@IDUtilizator", SqlDbType.Int).Direction = ParameterDirection.Output;
 
-                bazaLocala.Open();
+                try
+                {
+                    bazaLocala.Open();
+                }
+                catch
+                {
+                    MessageBox.Show("Baza de date nu se poate deschide!!!");
+                    return;
+                }
 
                 try
                 {
@@ -42,6 +51,7 @@ namespace CRM
                 }
                 catch
                 {
+                    MessageBox.Show("Credentialele nu sunt corecte!!!");
                     IDUtilizatorAutentificat = 0;
                 }
             }
@@ -50,6 +60,7 @@ namespace CRM
             {
                 utilizatorAutentificat = new StructuriDeDateTableAdapters.PersonTableAdapter().GetData().Where(x => x.ID == IDUtilizatorAutentificat).First();
                 this.Close();
+                LoggedIn = true;
             }
         }
 
