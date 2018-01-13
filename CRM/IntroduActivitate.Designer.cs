@@ -35,12 +35,13 @@
             this.Salveaza = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.IDCategorie = new System.Windows.Forms.TextBox();
+            this.Back = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(47, 358);
+            this.label2.Location = new System.Drawing.Point(47, 375);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(484, 38);
             this.label2.TabIndex = 9;
@@ -80,7 +81,7 @@
             // Salveaza
             // 
             this.Salveaza.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Salveaza.Location = new System.Drawing.Point(189, 552);
+            this.Salveaza.Location = new System.Drawing.Point(189, 525);
             this.Salveaza.Margin = new System.Windows.Forms.Padding(5);
             this.Salveaza.Name = "Salveaza";
             this.Salveaza.Size = new System.Drawing.Size(200, 65);
@@ -109,11 +110,24 @@
             this.IDCategorie.TabIndex = 11;
             this.IDCategorie.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // Back
+            // 
+            this.Back.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Back.Location = new System.Drawing.Point(189, 600);
+            this.Back.Margin = new System.Windows.Forms.Padding(5);
+            this.Back.Name = "Back";
+            this.Back.Size = new System.Drawing.Size(200, 65);
+            this.Back.TabIndex = 12;
+            this.Back.Text = "Inapoi";
+            this.Back.UseVisualStyleBackColor = true;
+            this.Back.Click += new System.EventHandler(this.Back_Click);
+            // 
             // IntroduActivitate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(579, 682);
+            this.Controls.Add(this.Back);
             this.Controls.Add(this.IDCategorie);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -138,5 +152,6 @@
         private System.Windows.Forms.Button Salveaza;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox IDCategorie;
+        private System.Windows.Forms.Button Back;
     }
 }
