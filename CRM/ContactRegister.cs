@@ -19,13 +19,12 @@ namespace CRM
             try
             {
                 adaptorDeDate.Insert(userID, Adresa.Text, Emailuri.Text, TelefonAcasa.Text, TelefonMobil.Text);
+                this.Close();
             }
             catch
             {
                 MessageBox.Show("Nu se pot insera aceste date!!!");
-                adaptorDeDate.Insert(userID, null, null, null, null);
             }
-            this.Close();
         }
 
         private void Export_Click(object sender, EventArgs e)

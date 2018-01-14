@@ -19,13 +19,12 @@ namespace CRM
             try
             {
                 adaptorDeDate.Insert(userID, UserName.Text, Password.Text.GetHashCode().ToString());
+                this.Close();
             }
             catch
             {
                 MessageBox.Show("Datele pentru logare nu se pot salva!!!");
-                adaptorDeDate.Insert(userID, null, null);
             }
-            this.Close();
         }
     }
 }

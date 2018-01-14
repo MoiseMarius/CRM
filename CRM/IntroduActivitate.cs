@@ -23,8 +23,6 @@ namespace CRM
             catch
             {
                 MessageBox.Show("Nu se poate insera activitatea!!!");
-                linkInapoi.Close();
-                this.Close();
             }
         }
 

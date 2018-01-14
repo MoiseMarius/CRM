@@ -27,7 +27,6 @@ namespace CRM
                 CommandText = "[dbo].[Autentificare]"
             })
             {
-
                 autentifica.Parameters.AddWithValue("@numeUtilizator", UserName.Text);
                 autentifica.Parameters.AddWithValue("@parolaUtilizator", Password.Text.GetHashCode());
                 autentifica.Parameters.Add("@IDUtilizator", SqlDbType.Int).Direction = ParameterDirection.Output;
