@@ -38,9 +38,10 @@
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(-2, 197);
+            this.label2.Location = new System.Drawing.Point(-2, 160);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(484, 38);
+            this.label2.Size = new System.Drawing.Size(363, 31);
             this.label2.TabIndex = 9;
             this.label2.Text = "Parola";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -48,9 +49,10 @@
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(-2, 17);
+            this.label1.Location = new System.Drawing.Point(-2, 14);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(484, 49);
+            this.label1.Size = new System.Drawing.Size(363, 40);
             this.label1.TabIndex = 8;
             this.label1.Text = "Username-ul";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -58,31 +60,31 @@
             // Password
             // 
             this.Password.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Password.Location = new System.Drawing.Point(45, 240);
-            this.Password.Margin = new System.Windows.Forms.Padding(5);
+            this.Password.Location = new System.Drawing.Point(34, 195);
+            this.Password.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Password.Name = "Password";
             this.Password.PasswordChar = '*';
-            this.Password.Size = new System.Drawing.Size(400, 38);
+            this.Password.Size = new System.Drawing.Size(301, 32);
             this.Password.TabIndex = 7;
             this.Password.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // UserName
             // 
             this.UserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UserName.Location = new System.Drawing.Point(45, 71);
-            this.UserName.Margin = new System.Windows.Forms.Padding(5);
+            this.UserName.Location = new System.Drawing.Point(34, 58);
+            this.UserName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.UserName.Name = "UserName";
-            this.UserName.Size = new System.Drawing.Size(400, 38);
+            this.UserName.Size = new System.Drawing.Size(301, 32);
             this.UserName.TabIndex = 6;
             this.UserName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // LoginButton
             // 
             this.LoginButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LoginButton.Location = new System.Drawing.Point(140, 416);
-            this.LoginButton.Margin = new System.Windows.Forms.Padding(5);
+            this.LoginButton.Location = new System.Drawing.Point(105, 338);
+            this.LoginButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.LoginButton.Name = "LoginButton";
-            this.LoginButton.Size = new System.Drawing.Size(200, 60);
+            this.LoginButton.Size = new System.Drawing.Size(150, 49);
             this.LoginButton.TabIndex = 5;
             this.LoginButton.Text = "Salveaza";
             this.LoginButton.UseVisualStyleBackColor = true;
@@ -90,14 +92,15 @@
             // 
             // LoginRegister
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(480, 493);
+            this.ClientSize = new System.Drawing.Size(360, 401);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Password);
             this.Controls.Add(this.UserName);
             this.Controls.Add(this.LoginButton);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "LoginRegister";
             this.Text = "LoginRegister";
             this.ResumeLayout(false);

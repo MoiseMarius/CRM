@@ -45,6 +45,8 @@
             this.informatiiCompleteBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.structuriDeDate = new CRM.StructuriDeDate();
             this.informatiiCompleteTableAdapter = new CRM.StructuriDeDateTableAdapters.InformatiiCompleteTableAdapter();
+            this.Export = new System.Windows.Forms.Button();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.informatiiCompleteBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.structuriDeDate)).BeginInit();
@@ -53,10 +55,10 @@
             // Back
             // 
             this.Back.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Back.Location = new System.Drawing.Point(345, 474);
-            this.Back.Margin = new System.Windows.Forms.Padding(5);
+            this.Back.Location = new System.Drawing.Point(133, 350);
+            this.Back.Margin = new System.Windows.Forms.Padding(4);
             this.Back.Name = "Back";
-            this.Back.Size = new System.Drawing.Size(200, 65);
+            this.Back.Size = new System.Drawing.Size(150, 53);
             this.Back.TabIndex = 13;
             this.Back.Text = "Inapoi";
             this.Back.UseVisualStyleBackColor = true;
@@ -81,11 +83,12 @@
             this.telefonMobilDataGridViewTextBoxColumn,
             this.telefonAcasaDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.informatiiCompleteBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 12);
+            this.dataGridView1.Location = new System.Drawing.Point(9, 10);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(875, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(687, 318);
             this.dataGridView1.TabIndex = 14;
             // 
             // iDDataGridViewTextBoxColumn
@@ -179,13 +182,27 @@
             // 
             this.informatiiCompleteTableAdapter.ClearBeforeFill = true;
             // 
+            // Export
+            // 
+            this.Export.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Export.Location = new System.Drawing.Point(347, 350);
+            this.Export.Margin = new System.Windows.Forms.Padding(4);
+            this.Export.Name = "Export";
+            this.Export.Size = new System.Drawing.Size(150, 53);
+            this.Export.TabIndex = 16;
+            this.Export.Text = "Export";
+            this.Export.UseVisualStyleBackColor = true;
+            this.Export.Click += new System.EventHandler(this.Export_Click);
+            // 
             // Contact
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(882, 553);
+            this.ClientSize = new System.Drawing.Size(703, 449);
+            this.Controls.Add(this.Export);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.Back);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Contact";
             this.Text = "Contact";
             this.Load += new System.EventHandler(this.Contact_Load);
@@ -213,5 +230,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn emailuriDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn telefonMobilDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn telefonAcasaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button Export;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
     }
 }

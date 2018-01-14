@@ -51,7 +51,7 @@ namespace CRM
                 }
                 catch
                 {
-                    MessageBox.Show("Credentialele nu sunt corecte!!!");
+                    MessageBox.Show("Userrul nu exista!!!");
                     IDUtilizatorAutentificat = 0;
                 }
             }
